@@ -39,26 +39,20 @@ const rows = json.table.rows;
 rows.forEach(row => {
 
 const plant = row.c[0]?.v;
-const water = row.c[1]?.v;
-const fert = row.c[2]?.v;
+const water = row.c[1];
+const fert = row.c[2];
 
 if(!plant) return;
 
-const waterEl = document.getElementById(plant + "_water");
-const fertEl = document.getElementById(plant + "_fert");
+const waterEl = document.getElementById(plant+"_water");
+const fertEl = document.getElementById(plant+"_fert");
 
-if(water && waterEl){
-
-const date = new Date(water);
-waterEl.innerText = date.toLocaleDateString();
-
+if(water && water.f && waterEl){
+waterEl.innerText = water.f;
 }
 
-if(fert && fertEl){
-
-const date = new Date(fert);
-fertEl.innerText = date.toLocaleDateString();
-
+if(fert && fert.f && fertEl){
+fertEl.innerText = fert.f;
 }
 
 });
