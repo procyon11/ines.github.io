@@ -26,6 +26,12 @@ a {
   text-decoration: none;
 }
 
+.plant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 a:hover {
   color: #FF00FF;
 }
