@@ -11,7 +11,7 @@
 
 <h1>plantas</h1>
 
-<p>registro botánico v0.3</p>
+<p>registro botánico v0.4</p>
 <p>plantas registradas: 8</p>
 
 <br>
@@ -20,67 +20,139 @@
 
 
 <div class="card">
+
 <img src="img/sansevieria.png" class="plant-icon">
+
 <p><strong>[001]</strong> dracaena trifasciata</p>
-<p>luz: baja a media</p>
-<p>riego: cada 2-3 semanas</p>
+<p>ubicación: dormitorio</p>
+<p>estado: feliz</p>
+
+<p>último riego: <span id="sansevieria_water">—</span></p>
+<p>último fertilizante: <span id="sansevieria_fert">—</span></p>
+
+<button onclick="updateWater('sansevieria')">regar</button>
+<button onclick="updateFertilizer('sansevieria')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/spatiphyllum.png" class="plant-icon">
+
 <p><strong>[002]</strong> spathiphyllum</p>
-<p>luz: baja a media</p>
-<p>riego: cuando el sustrato empieza a secarse</p>
+<p>ubicación: salón</p>
+<p>estado: feliz</p>
+
+<p>último riego: <span id="spatiphyllum_water">—</span></p>
+<p>último fertilizante: <span id="spatiphyllum_fert">—</span></p>
+
+<button onclick="updateWater('spatiphyllum')">regar</button>
+<button onclick="updateFertilizer('spatiphyllum')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/alocasia.png" class="plant-icon">
+
 <p><strong>[003]</strong> alocasia</p>
-<p>luz: indirecta brillante</p>
-<p>riego: mantener suelo húmedo</p>
+<p>ubicación: salón</p>
+<p>estado: creciendo</p>
+
+<p>último riego: <span id="alocasia_water">—</span></p>
+<p>último fertilizante: <span id="alocasia_fert">—</span></p>
+
+<button onclick="updateWater('alocasia')">regar</button>
+<button onclick="updateFertilizer('alocasia')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/monstera.png" class="plant-icon">
+
 <p><strong>[004]</strong> monstera deliciosa</p>
-<p>luz: indirecta media</p>
-<p>riego: semanal</p>
+<p>ubicación: salón</p>
+<p>estado: feliz</p>
+
+<p>último riego: <span id="monstera_water">—</span></p>
+<p>último fertilizante: <span id="monstera_fert">—</span></p>
+
+<button onclick="updateWater('monstera')">regar</button>
+<button onclick="updateFertilizer('monstera')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/ficuselastica.png" class="plant-icon">
+
 <p><strong>[005]</strong> ficus elastica</p>
-<p>luz: brillante indirecta</p>
-<p>riego: moderado</p>
+<p>ubicación: salón</p>
+<p>estado: creciendo</p>
+
+<p>último riego: <span id="ficuselastica_water">—</span></p>
+<p>último fertilizante: <span id="ficuselastica_fert">—</span></p>
+
+<button onclick="updateWater('ficuselastica')">regar</button>
+<button onclick="updateFertilizer('ficuselastica')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/calathea.png" class="plant-icon">
+
 <p><strong>[006]</strong> calathea makoyana</p>
-<p>luz: indirecta suave</p>
-<p>riego: sustrato húmedo</p>
+<p>ubicación: salón</p>
+<p>estado: feliz</p>
+
+<p>último riego: <span id="calathea_water">—</span></p>
+<p>último fertilizante: <span id="calathea_fert">—</span></p>
+
+<button onclick="updateWater('calathea')">regar</button>
+<button onclick="updateFertilizer('calathea')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/tradescantias.png" class="plant-icon">
+
 <p><strong>[007]</strong> tradescantia nanouk</p>
 <p>cantidad: 2</p>
-<p>luz: brillante</p>
-<p>riego: moderado</p>
+<p>ubicación: salón</p>
+<p>estado: feliz</p>
+
+<p>último riego: <span id="tradescantias_water">—</span></p>
+<p>último fertilizante: <span id="tradescantias_fert">—</span></p>
+
+<button onclick="updateWater('tradescantias')">regar</button>
+<button onclick="updateFertilizer('tradescantias')">fertilizar</button>
+
 </div>
 
 
 <div class="card">
+
 <img src="img/ficusbenjamina.png" class="plant-icon">
+
 <p><strong>[008]</strong> ficus benjamina</p>
-<p>luz: brillante</p>
-<p>riego: regular</p>
+<p>ubicación: salón</p>
+<p>estado: feliz</p>
+
+<p>último riego: <span id="ficusbenjamina_water">—</span></p>
+<p>último fertilizante: <span id="ficusbenjamina_fert">—</span></p>
+
+<button onclick="updateWater('ficusbenjamina')">regar</button>
+<button onclick="updateFertilizer('ficusbenjamina')">fertilizar</button>
+
 </div>
 
 
@@ -91,5 +163,6 @@
 <a href="index.html">← volver</a>
 
 <script src="plantas.js"></script>
+
 </body>
 </html>
