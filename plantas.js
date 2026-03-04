@@ -1,45 +1,25 @@
-function today() {
-  return new Date().toLocaleDateString();
-}
+const API_URL = "https://script.google.com/macros/s/AKfycbx3FmmzLDxNTUYr31Mk4_0FK5BUQ79NwyVy2IKSGQtoqEm8DoBDWpZFwImnTT-Or98/exec";
 
 function updateWater(plant) {
-  localStorage.setItem(plant + "_water", today());
-  loadPlantData();
-}
 
-function updateFertilizer(plant) {
-  localStorage.setItem(plant + "_fertilizer", today());
-  loadPlantData();
-}
-
-function loadPlantData() {
-
-  const plants = [
-    "sansevieria",
-    "spatiphyllum",
-    "alocasia",
-    "monstera",
-    "ficuselastica",
-    "calathea",
-    "tradescantias",
-    "ficusbenjamina"
-  ];
-
-  plants.forEach(p => {
-
-    const water = localStorage.getItem(p + "_water");
-    const fert = localStorage.getItem(p + "_fertilizer");
-
-    if (water) {
-      document.getElementById(p + "_water").innerText = water;
-    }
-
-    if (fert) {
-      document.getElementById(p + "_fert").innerText = fert;
-    }
-
+  fetch(API_URL, {
+    method: "POST",
+    body: new URLSearchParams({
+      plant: plant,
+      type: "water"
+    })
   });
 
 }
 
-window.onload = loadPlantData;
+function updateFertilizer(plant) {
+
+  fetch(API_URL, {
+    method: "POST",
+    body: new URLSearchParams({
+      plant: plant,
+      type: "fert"
+    })
+  });
+
+}
