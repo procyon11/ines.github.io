@@ -35,3 +35,17 @@ a:hover {
   image-rendering: pixelated;
   margin-bottom: 10px;
 }
+
+.card {
+  border: 1px solid #00FF00;
+  padding: 20px;
+  margin-bottom: 25px;
+  width: 260px;
+}
+
+.plant-icon {
+  width: 120px;
+  image-rendering: pixelated;
+  display: block;
+  margin-bottom: 10px;
+}
