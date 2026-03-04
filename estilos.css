@@ -29,3 +29,9 @@ a {
 a:hover {
   color: #FF00FF;
 }
+
+.plant-icon {
+  width: 120px;
+  image-rendering: pixelated;
+  margin-bottom: 10px;
+}
