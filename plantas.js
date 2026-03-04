@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbx3FmmzLDxNTUYr31Mk4_0FK5BUQ79NwyVy2IKSGQtoqEm8DoBDWpZFwImnTT-Or98/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwZOcaSAz-9zhKZaB8Z3GXyXKL34pXyTGkzS6rfBLxlQtVA4-r4f0lCeDGznJGwA9eJ/exec";
 
 function updateWater(plant) {
 
