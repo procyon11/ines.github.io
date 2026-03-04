@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  color: #00FF00;
+  font-family: monospace;
+  padding: 40px;
+}
+
+h1 {
+  color: #FFD700;
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #00FFFF;
+  margin-bottom: 40px;
+}
+
+.menu p {
+  margin: 12px 0;
+}
+
+a {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF00FF;
+}
