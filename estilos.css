@@ -48,6 +48,16 @@ a:hover {
   width: 220px;
 }
 
+.card:hover {
+  transform: scale(1.08);
+  border-color: #00ff88;
+  transition: transform 0.15s;
+}
+
+.card {
+  transition: transform 0.15s;
+}
+
 .plant-icon {
   width: 120px;
   image-rendering: pixelated;
