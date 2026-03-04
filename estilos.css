@@ -36,17 +36,16 @@ a:hover {
   color: #FF00FF;
 }
 
-.plant-icon {
-  width: 120px;
-  image-rendering: pixelated;
-  margin-bottom: 10px;
+.plant-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .card {
   border: 1px solid #00FF00;
   padding: 20px;
-  margin-bottom: 25px;
-  width: 260px;
+  width: 220px;
 }
 
 .plant-icon {
